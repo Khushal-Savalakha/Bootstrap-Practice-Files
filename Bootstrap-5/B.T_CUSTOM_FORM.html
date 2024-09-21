@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        border: 3px solid black;
+      }
+    </style>
+</head>
+<body>
+    <div class="container mt-2 border border-dark">
+        <h5>Contact form</h5>
+        <form action="#">
+          <!—To add textbox -- >
+      
+          <div class="userid">
+            <label for="uid" class="form-label"> User Name: </label>
+            <input
+              type="text"
+              class="form-control"
+              id=" uid "
+              placeholder="Enter user_name"
+              name=" uid "
+              required
+            />
+          </div>
+          <!—To add textbox -- >
+          <div class="emailid">
+            <label for="emid" class="form-label"> Email Id: </label>
+            <input
+              type="email"
+              class="form-control"
+              id=" emid "
+              placeholder="Enter email_id"
+              name=" emid "
+              required
+            />
+          </div>
+          <!—To add textarea -- >
+          <div class="txt">
+            <label for="txt" class="form-label"> Message: </label>
+            <textarea
+              class="form-control"
+              id="txt"
+              placeholder="Enter message"
+              name="txt"
+              required
+            ></textarea>
+          </div>
+          <!—To add radio buttons -- >
+          <div class="gen d-flex">
+            <label for="gender" class="form-label m-2"> Gender: </label>
+            <div class="form-check m-2">
+              <input
+                class="form-check-input"
+                value="male"
+                type="radio"
+                name="gender"
+                required
+              />
+              <label class="form-check-label">Male</label>
+            </div>
+            <div class="form-check m-2">
+              <input
+                class="form-check-input"
+                value="female"
+                type="radio"
+                name="gender"
+                required
+              />
+              <label class="form-check-label">Female</label>
+            </div>
+          </div>
+          <!—To add dropdown -- >
+          <div class="city">
+            <label>Select City</label>
+            <select class="form-select">
+              <optgroup label="Gujarat">
+                <option>Ahmedabad</option>
+                <option>Gandhinagar</option>
+              </optgroup>
+              <optgroup label="Rajasthan">
+                <option>Jaipur</option>
+              </optgroup>
+            </select>
+          </div>
+          <!—To add checkbox -- >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="Checked"
+              name="remembers"
+              required
+            />
+            <label class="form-check-label" for="Checked"> I agree</label>
+          </div>
+          <!—To add button -- >
+          <button
+            type="submit"
+            class="btn btn-danger text-light d-block mx-auto my-4"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      
+</body>
+</html>

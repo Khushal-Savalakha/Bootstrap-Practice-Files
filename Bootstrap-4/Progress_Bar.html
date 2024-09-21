@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mb-5">
+      <!-- mb-5=margin bottom 5=3rem=48pixles -->
+      <h2 class="py-3 text-center">Bootstrap Progress Bar Classes</h2>
+      <!-- py-3=padding at y axis -->
+      <div class="row py-5">
+        <div class="col">
+          <h5>HTML</h5>
+          <!-- <div class="progress mb-3" style="height:5px"> -->
+          <div class="progress mb-3">
+            <!-- mb-3 takes margin bottom space form below progress-bar -->
+            <!-- here div which contains pogress class is a parent of below div -->
+            <div class="progress-bar" style="width: 25%">
+              <!-- width:25% means parents(Progress Bar's) width 25% -->
+              25%
+            </div>
+          </div>
+          <h5>Web Designing</h5>
+          <!-- <div class="progress" style="height:5px"> -->
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 50%">50%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* .container{
+    border:8px solid black;
+}
+.container-fluid{
+    border:8px solid black;
+}
+.row{
+    border:5px solid red;
+}
+.col{
+    border:3px solid green;
+} */
+.container {
+    border: 8px solid black;
+}
+
+.container-fluid {
+    border: 8px solid black;
+}
+
+.row {
+    border: 5px solid red;
+}
+
+/* The following style ensures that columns within row-cols-2 are displayed side by side */
+.row.row-cols-2 .col {
+    flex: 0 0 50%; /* Adjust the width based on your requirements */
+    max-width: 50%; /* Adjust the width based on your requirements */
+    border:3px solid green;
+}
+
+.col{
+    border:3px solid green;
+}
